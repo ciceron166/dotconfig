@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/alokin/.config/suckless/dwm'
+let g:netrw_dirhist_2='/home/alokin/.config/suckless/dwmblocks'
+let g:netrw_dirhist_1='/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight'

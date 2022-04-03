@@ -1,0 +1,29 @@
+#basic bindings
+super + Escape
+	pkill -USR1 -x sxhkd
+super + Return
+	st
+super + d
+	dmenu_run
+super + r
+	st -e ranger
+XF86MonBrightnessDown
+	xbacklight -dec 10%
+XF86MonBrightnessUp
+	xbacklight -inc 10%
+super + shift + w
+	firefox
+#XF86Audio{Raise,Lower}Volume
+#	pulsemixer --change-volume{+,-}10
+#XF86AudioMute
+#	pulsemixer --togle-mute
+#Volume Control
+XF86AudioRaiseVolume
+    amixer -D pulse sset Master 5%+ unmute
+XF86AudioLowerVolume
+    amixer -D pulse sset Master 5%- unmute
+XF86AudioMute
+	amixer -D pulse sset Master toggle
+#mount drives
+super + shift + F9
+	  dmenumount
